@@ -9,15 +9,12 @@ import (
 func main() {
 
 	fmt.Println("Package", strings.Title("Main"), "verson", rand.Intn(100012132130))
-	hand, cards := deal(newDeck(), 3)
+	card := fmt.Sprintln("test", newCard2())
 
-	var a = []string{"One", "Two"}
+	fmt.Println(card)
 
-	for i := range a {
-		fmt.Println(a[i])
-	}
+}
 
-	hand.print()
-	cards.print()
-
+func newCard2() string {
+	return "Ace of spades"
 }
