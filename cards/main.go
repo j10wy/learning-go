@@ -1,20 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-	"strings"
-)
-
 func main() {
 
-	fmt.Println("Package", strings.Title("Main"), "verson", rand.Intn(100012132130))
-	card := fmt.Sprintln("test", newCard2())
+	var cards = deck{"Ace of Spades", "Joker"}
 
-	fmt.Println(card)
+	cards.print()
 
-}
+	PrintYear()
 
-func newCard2() string {
-	return "Ace of spades"
 }
