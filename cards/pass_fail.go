@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 )
 
@@ -14,9 +15,13 @@ func getScore() {
 }
 
 func getFile() {
-	file, err := os.Open("mytext")
+	file, err := os.Open("mytext.txt")
 	// File will be nil
-	fmt.Print("file: ", file)
-	// Error: open mytext: "no such file or directory"
-	fmt.Print("err: ", err)
+	if file != nil {
+		// Error: open mytext: "no such file or directory"
+		fmt.Print("err: ", err)
+		log.Fatal(file)
+	} else {
+		fmt.Print("file: ", file.Name())
+	}
 }
