@@ -6,13 +6,17 @@ import (
 	"time"
 )
 
+func askQuestion() {
+	fmt.Println("I've generated a random number. Can you guess it?")
+}
+
 func generateSeedValue() (x int64) {
 	x = time.Now().Unix()
 	return
 }
 
-func printRandomNumber(time int64) {
+func generateRandomNumber(time int64, maxVal int) (rNum int) {
 	rand.Seed(time)
-	rNum := rand.Intn(100)
-	fmt.Println("Number is", rNum)
+	rNum = rand.Intn(maxVal)
+	return
 }

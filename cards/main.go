@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	printRandomNumber(generateSeedValue())
+	//randNum := generateRandomNumber(generateSeedValue(), 100)
+	askQuestion()
 }
