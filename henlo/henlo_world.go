@@ -10,6 +10,13 @@ var (
 	b = 14
 )
 
+// Doggo type def
+type Doggo struct {
+	Name  string
+	Color string
+	Age   int
+}
+
 // Wut is a function
 func Wut() {
 	fmt.Println("Henlo, fren!")
