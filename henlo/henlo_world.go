@@ -1,4 +1,4 @@
-package main
+package henlo
 
 import (
 	"fmt"
@@ -10,7 +10,8 @@ var (
 	b = 14
 )
 
-func main() {
+// Wut is a function
+func Wut() {
 	fmt.Println("Henlo, fren!")
 	fmt.Printf("Did you know there are %v hours in a day?\n", a+b)
 
