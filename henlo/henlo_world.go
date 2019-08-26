@@ -17,6 +17,11 @@ type Doggo struct {
 	Age   int
 }
 
+// PrintDoggosName - print the doggos name
+func (d Doggo) PrintDoggosName() string {
+	return d.Name
+}
+
 // Wut is a function
 func Wut() {
 	fmt.Println("Henlo, fren!")

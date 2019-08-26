@@ -17,6 +17,6 @@ func main() {
 		Age:   8,
 	}
 
-	k := fmt.Sprintf("My dog, %s, is %s. She is %v years old", kals.Name, kals.Color, kals.Age)
+	k := fmt.Sprintf("My dog, %s, is %s. She is %v years old", kals.PrintDoggosName(), kals.Color, kals.Age)
 	fmt.Println(k)
 }
