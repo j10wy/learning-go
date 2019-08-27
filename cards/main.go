@@ -18,6 +18,7 @@ func main() {
 
 	k := fmt.Sprintf("My dog, %s, is %s. She is %v years old", kals.PrintDoggosName(), kals.Color, kals.Age)
 	fmt.Println(k)
+	fmt.Println("Chico is", henlo.Chico.Age)
 
 	// kals.Age = 1
 	if kals.Age > 7 {

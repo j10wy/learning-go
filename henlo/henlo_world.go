@@ -31,3 +31,10 @@ func (d Doggo) Wut() {
 	a = rand.Intn(1098700 / 1000)
 	fmt.Println("Random number:", a)
 }
+
+// Chico - is a dog
+var Chico = Doggo{
+	Name:  "Chico",
+	Color: "black and white",
+	Age:   13,
+}
