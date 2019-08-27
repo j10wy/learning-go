@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/jeffreylowy/intro-to-go/henlo"
+	"github.com/jeffreylowy/intro-to-go/loops"
 )
 
 func main() {
@@ -26,4 +27,11 @@ func main() {
 	} else {
 		fmt.Println("Are you sure Kals is younger than 7?")
 	}
+
+	l := loops.Looper{
+		MaxCount:     10,
+		CurrentCount: 0,
+	}
+
+	l.Loop()
 }
