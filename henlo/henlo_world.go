@@ -23,7 +23,7 @@ func (d Doggo) PrintDoggosName() string {
 }
 
 // Wut is a function
-func Wut() {
+func (d Doggo) Wut() {
 	fmt.Println("Henlo, fren!")
 	fmt.Printf("Did you know there are %v hours in a day?\n", a+b)
 
